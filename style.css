@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: linear-gradient(45deg, #945aff, #51ff94);
+  font-family: poppins;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: poppins;
+}
+
+.linkButton {
+  font-family: poppins;
+  background-color: #945aff;
+  border-color: #945aff;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+main {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+nav {
+    width: fit-content;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    background-color: rgb(148, 90, 255);
+    color: black;
+    border-radius: 25px;
+}
+
+#currentNav {
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+}
+
+#currentNav:hover {
+  background-color: rgb(148, 90, 255);
+  color: black;
+  border-radius: 25px;
+}
+
+.bigText {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.topicList a {
+    text-decoration: none;
+    color: black;
+}
+
+.topic {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    transition: transform .2s;
+}
+
+.topic:hover{
+  transform: scale(1.05);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    transition: transform .2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .disabledCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 16px;
+    transition: transform .2s;
+  }
+
+  .card b, a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    main {
+      margin: 0;
+    }
+  }
+
+
+
+  .tab {
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: black;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: white;
+  }
+  
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(148, 90, 255);
+    border-radius: 25px;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+  }
+
+  .tab button.active:hover {
+    background-color: rgb(148, 90, 255);
+    border-radius: 25px;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 16px;
+    margin-top: 10px;
+  }
+
+
+
+
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
